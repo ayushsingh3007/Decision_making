@@ -42,7 +42,7 @@
   </pre>
 
 <h3>Que-2--You are given an integer A, denoting the age of a person, and your task is to determine whether he/she is eligible to vote or not.</h3>
-<pre>ans-- by using is eligible function
+<pre style="color: brown;">ans-- by using is eligible function
   let A=32;
   if(A>=18){
     return "eligible"
@@ -59,11 +59,122 @@
      console.log(ans)
 </pre>
 
-<h3></h3>
+<h3>Que-3--Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not.
+  Note: You have to complete Check_divisibility. No need to take any input</h3>
+<pre style="color: brown;">ans--
+  let num=36;
+  if(num%6===0&&num%9===0){
+    return "Divisible by both"
+  }
+  else{
+    return "Not divisible by both"
+  }
+</pre>
 
+<h3>Que-4--PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values X and Y and asks you to find the relation between them.
+  <p>If X < Y, it means that X is smaller than Y.</p>
+  <p>If X>Y, it means that X is greater than Y.</p>
+  <p>If X=Y, it means that X is equal to Y. </p>
+</h3>
 
+<pre style="color: brown;">ans--
+    if(X < Y){
+      return X "is smaller than " Y   }
+      else if(X>Y){
+        return X "is greater than " Y
+      }
+      else {
+        return X "is equal to " Y
+      }
 
+      switch(true){
+        case X>Y: 
+            console.log(X+ "is greater than" +Y)
+            break;
+        case X < Y: 
+            console.log(X+ " is smaller than " +Y)
+            break;
+        case X=Y: 
+            console.log(X+ " is equal  to " +Y)  
+            break;
+        default: 
+        console.log( " error has found " )
+            
+    }
+</pre>
 
+<h3>Que-5--Your school has the following grading system based upon the marks(M) obtained by a student:
+  <p>If  M ≤10, the grade will be E.</p><p>If 11≥M≤20, the grade will be D.</p><p>If 21≥M≤30, the grade will be C.</p>
+  <p>If 31≥M≤40, the grade will be B.</p><p>If 41≥M≤50, the grade will be A.</p>
+</h3>
+<pre style="color: brown;">ans---
+  const findGrades = (a) => {
+    switch(true){
+      case a<=10:
+         return "E"
+        break;
+      case a>=11&&a<=20:
+        return "D"
+        break;
+      case a>=21&&a<=30:
+          return "C"
+        break;
+       case a>=31&&a<=40:
+         return "B"
+        break;
+       case a>=41&&a<=50:
+        return  "A"
+        break;  
+        default: 
+          return  "not found";
+    }
+  
+};
+
+this question is done by using if else condition also
+if(a<=10){
+  return "E"
+}
+else if(a>=11&&a<=20){
+  return "D"
+}
+else if(a>=21&&a<=30){
+  return "C"
+}
+else if(a>=31&&a<=40){
+  return "B"
+}
+else {
+  return "A"
+}
+</pre>
+<h3>Que-6--You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it.
+  <p>| P or p 	- PrepBytes      	|</p>
+  <p>| Z or z 	- Zenith         	|</p>
+  <p>| E or e 	- Expert Coder   	|</p>
+  <p>| D or d 	- Data Structure 	|</p>
+</h3>
+<pre>ans--
+  const getValue = (a) => {
+      switch(a){
+        case a="E"||"e":
+          return "Expert Coder"
+          break;
+        case a="D"||"d":
+          return "Data Structure"
+          break;
+        case a="Z" ||"z" :
+          return "Zenith"
+          break;
+         case a="P"||"p":
+           return "PrepBytes"
+           break;
+           default:
+              return 'not found';
+      }
+  };
+  
+  </pre>
 
 
 
